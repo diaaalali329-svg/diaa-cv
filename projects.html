@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الأعمال | ضياء العلي</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --bg: #f4f4f9;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 40px;
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+        .header-wrapper {
+            text-align: center;
+        }
+        
+        /* تنسيقات شبكة الأعمال */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .project-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .project-card video {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--accent);
+            background-color: #000;
+        }
+        .project-info {
+            padding: 20px;
+        }
+        .project-info h3 {
+            margin: 0 0 10px 0;
+            color: var(--primary);
+        }
+        .project-info p {
+            margin: 0;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* تنسيق زر العودة */
+        .btn-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .back-btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+        .back-btn:hover {
+            background-color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-wrapper">
+            <h1>أعمالي ومشاريعي التقنية</h1>
+        </div>
+
+        <div class="projects-grid">
+            
+            <!-- مشروع تطبيق الديون -->
+            <div class="project-card">
+                <video controls muted preload="metadata">
+                    <source src="debt-app.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+                <div class="project-info">
+                    <h3>تطبيق دفتر الديون المحاسبي</h3>
+                    <p>تطبيق مبني بلغة Python مع واجهة رسومية لإدارة حسابات العملاء، مزود بخوارزميات لحساب الأرباح بدقة مضبوطة على نسبة 27%.</p>
+                </div>
+            </div>
+
+            <!-- مشاريع آرت لايف -->
+            <div class="project-card">
+                <video controls muted preload="metadata">
+                    <source src="artlife-projects.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+                <div class="project-info">
+                    <h3>مشاريع وكالة آرت لايف</h3>
+                    <p>نماذج من التصاميم الرقمية وتطوير الهوية البصرية للعملاء لزيادة وصول العلامة التجارية وتقديم حلول برمجية متكاملة.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- زر العودة للرئيسية -->
+        <div class="btn-container">
+            <a href="index.html" class="back-btn">العودة للصفحة الرئيسية</a>
+        </div>
+    </div>
+
+</body>
+</html>
